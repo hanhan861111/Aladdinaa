@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="680px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_orderNum"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="26px"
+                android:gravity="center_vertical"
+                android:text="#03"
+                android:textColor="@color/colorGray4"
+                android:textSize="36px"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_pin"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_orderState"
+                android:layout_width="166px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="320px"
+                android:gravity="center_vertical|right"
+                android:text="已接单"
+                android:textColor="@color/colorGray3"
+                android:textSize="28px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_userName"
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="26px"
+                android:gravity="center_vertical"
+                android:text="张先生"
+                android:textColor="@color/colorGray4"
+                android:textSize="28px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_call"
+                android:layout_width="166px"
+                android:layout_height="100px"
+                android:layout_marginLeft="260px"
+                android:gravity="center_vertical|right">
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:background="@drawable/dianhua" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:gravity="center"
+                    android:text="联系顾客"
+                    android:textColor="@color/colorGray4"
+                    android:textSize="24px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="26px"
+                android:gravity="center_vertical"
+                android:text="订单"
+                android:textColor="@color/colorGray3"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="200px"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_fistfoodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="26px"
+                    android:gravity="center_vertical"
+                    android:text="....."
+                    android:textColor="@color/colorGray4"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_dots"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="···"
+                android:textColor="@color/colorGray4"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_open"
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:layout_marginLeft="260px"
+                android:background="@drawable/yellow_frame"
+                android:gravity="center"
+                android:text="展开"
+                android:textColor="@color/colorGray3"
+                android:textSize="28px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <include layout="@layout/item_inquire_hide"></include>
+
+        <View
+            android:layout_width="650px"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:background="@color/colorBlack"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="680px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_payState"
+                android:layout_width="100px"
+                android:layout_height="40px"
+                android:background="@color/colorGreen"
+                android:gravity="center"
+                android:text="已支付"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_orderPrice"
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="￥15:00"
+                android:textColor="@color/colorGray4"
+                android:textSize="28px"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="650px"
+        android:layout_height="20px"
+        android:layout_gravity="center"
+        android:background="@color/colorBlack"></View>
+</com.zhy.autolayout.AutoLinearLayout>

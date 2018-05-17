@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aladdin.hxe.activity.CategoryManageActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="36px"
+        android:background="@color/colorYellow">
+
+        <ImageButton
+            android:id="@+id/imb_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="品类管理"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/colorBlack"
+            android:id="@+id/rv_categoryManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+            <TextView
+                android:background="@color/white"
+                android:id="@+id/tv_addCategory"
+                android:textColor="@color/colorGray4"
+                android:gravity="center"
+                android:text="添加品类"
+                android:textSize="32px"
+                android:drawableLeft="@mipmap/plus"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="100px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

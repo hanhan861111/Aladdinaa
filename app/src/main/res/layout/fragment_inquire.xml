@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="36px"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/colorTextYellow"
+        android:gravity="center">
+
+        <com.aladdin.hxe.manager.MyTextView
+            android:id="@+id/tv_today"
+            android:layout_width="150px"
+            android:layout_height="56px"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="今天"
+            android:textColor="@color/colorYellow"
+            android:textSize="28px" />
+
+        <com.aladdin.hxe.manager.MyTextView
+            android:id="@+id/tv_date"
+            android:layout_width="150px"
+            android:layout_height="56px"
+            android:background="@color/colorYellow"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorTextYellow"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        app:tabSelectedTextColor="@color/colorTextYellow"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/colorGray3"></android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:background="@color/colorBlack"
+        android:id="@+id/vp_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</com.zhy.autolayout.AutoLinearLayout>

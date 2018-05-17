@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aladdin.hxe.activity.HomeActivity">
+
+    <com.aladdin.hxe.manager.NoScrollViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="13"></com.aladdin.hxe.manager.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/pending"
+            android:gravity="center"
+            android:text="待处理"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="28px" />
+
+        <RadioButton
+            android:id="@+id/rb_inquire"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/inquire"
+            android:gravity="center"
+            android:text="订单查询"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="28px" />
+
+        <RadioButton
+            android:id="@+id/rb_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/manage"
+            android:gravity="center"
+            android:text="管理"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="28px" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/mine"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="28px" />
+    </RadioGroup>
+</com.zhy.autolayout.AutoLinearLayout>

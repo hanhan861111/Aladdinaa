@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="32px"
+            android:layout_width="250px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="请输入菜品信息"
+            android:textColor="@color/black" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:textSize="28px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="菜名:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_name_editGoods"
+                android:layout_width="500px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:hint="请输入菜名"
+                android:textColor="@color/colorTextGray"
+                android:textSize="24px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="500px"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:background="#c8c8c8" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:textSize="28px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="数量:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_num_editGoods"
+                android:layout_width="500px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:hint="请输入数量"
+                android:textColor="@color/colorTextGray"
+                android:textSize="24px"  />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="500px"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:background="#c8c8c8" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="价格:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:textSize="24px"
+                android:id="@+id/et_price_editGoods"
+                android:layout_width="500px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:hint="请输入价格"
+                android:textColor="@color/colorTextGray"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="500px"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:background="#c8c8c8" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="500px"
+            android:layout_height="60px"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="160px"
+                android:layout_height="60px"
+                android:gravity="center_vertical"
+                android:text="请选择分类:"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="200px"
+                android:layout_height="50px"
+                android:popupBackground="@color/white"
+                android:backgroundTint="@color/colorGray4" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="500px"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:layout_marginTop="5px"
+            android:background="#c8c8c8" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="500px"
+            android:layout_height="120px"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="80px"
+                android:layout_height="120px"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="图片:"
+                android:textColor="@color/black" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="150px"
+                android:layout_height="120px">
+                <ImageView
+                    android:id="@+id/img_add_editGoods"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app"
+                    android:layout_width="80px"
+                    android:layout_height="80px" />
+                <ImageView
+                    android:id="@+id/img_photo_editGoods"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80px"
+                    android:layout_height="80px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_save_editGoods"
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/text2"
+                android:gravity="center"
+                android:text="确定"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_cancel_editGoods"
+                android:layout_width="160px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="80px"
+                android:background="@mipmap/text1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/colorGray4"
+                android:textSize="32px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
+
+

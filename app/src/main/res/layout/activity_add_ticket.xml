@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    tools:context="com.aladdin.hxe.activity.AddTicketActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="36px"
+        android:background="@color/colorYellow">
+
+        <ImageButton
+            android:id="@+id/imb_back"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加票机"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="680px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:hint="品牌信息"
+            android:textColor="@color/colorGray3"
+            android:textSize="32px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="10px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="品牌名称:"
+                android:textColor="@color/colorGray4"
+                android:textSize="36px"
+                android:id="@+id/textView5" />
+
+
+            <Spinner
+                android:layout_marginLeft="182px"
+                android:layout_gravity="center"
+                android:id="@+id/spinnerBrandName"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white"
+                android:backgroundTint="@color/colorGray4" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="680px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:hint="票机信息"
+            android:textColor="@color/colorGray3"
+            android:textSize="32px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:layout_marginLeft="26px"
+                android:gravity="center_vertical"
+                android:text="类型:"
+                android:textColor="@color/colorGray4"
+                android:textSize="36px" />
+
+            <Spinner
+                android:layout_marginLeft="170px"
+                android:layout_gravity="center"
+                android:id="@+id/spinnerTypeName"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white"
+                android:backgroundTint="@color/colorGray4" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorBlack"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:layout_marginLeft="26px"
+                android:gravity="center_vertical"
+                android:text="名称:"
+                android:textColor="@color/colorGray4"
+                android:textSize="36px" />
+
+            <Spinner
+                android:layout_marginLeft="170px"
+                android:layout_gravity="center"
+                android:id="@+id/spinnerKitchenName"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white"
+                android:backgroundTint="@color/colorGray4" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorBlack"></View>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:layout_width="160px"
+                android:layout_height="80px"
+                android:layout_marginLeft="26px"
+                android:gravity="center_vertical"
+                android:text="编号:"
+                android:textColor="@color/colorGray4"
+                android:textSize="36px" />
+
+            <EditText
+                android:id="@+id/et_ticketNum"
+                android:layout_width="250px"
+                android:layout_height="80px"
+                android:layout_marginLeft="230px"
+                android:background="@null"
+                android:hint="请输入打票机编号"
+                android:textColorHint="@color/colorGray3"
+                android:textSize="28px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bunding"
+        android:layout_width="680px"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+        android:text="绑定"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+</com.zhy.autolayout.AutoLinearLayout>

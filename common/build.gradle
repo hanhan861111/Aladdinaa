@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.+'
+    testCompile 'junit:junit:4.12'
+
+    //OkHttp网络库
+    compile 'com.squareup.okhttp3:okhttp:3.3.0'
+    //Gson解析
+    compile 'com.google.code.gson:gson:2.8.0'
+    //AutoLayout屏幕适配
+    compile 'com.zhy:autolayout:1.4.3'
+    //Tablayout依赖
+    compile 'com.android.support:design:25.3.1'
+    //switch库
+    compile 'com.kyleduo.switchbutton:library:1.4.1'
+    //沉浸式状态栏
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //万能适配
+    compile 'com.zhy:base-adapter:3.0.3'
+    compile project(':xrecyclerview')
+}

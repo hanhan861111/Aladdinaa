@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/colorBlack"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400px"
+            android:gravity="center"
+            android:text="2018/1/3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.zhy.autolayout.AutoLinearLayout>
